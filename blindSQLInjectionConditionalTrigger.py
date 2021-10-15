@@ -1,4 +1,6 @@
 import requests, string
+
+# Sending all the characters to match with the database.
 alphabetList = list(string.printable)
 restart = True
 counter = 0

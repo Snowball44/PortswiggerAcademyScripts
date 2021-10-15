@@ -1,2 +1,2 @@
 # PortswiggerAcademyScripts
-Scripts used during completion of portswigger labs
+Scripts used during completion of PortSwigger labs
