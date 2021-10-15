@@ -14,7 +14,8 @@ databaseFingerprintingDict =  {
 "SELECT sleep(3)#":"mysql"
 }
 
-#Fingerprinting database. First we make some queries to cause a short delay to figure out what kind of database it is. Then after that we try the bruteforcing of the password.
+#Fingerprinting database. First we make some queries to cause a short delay to figure out what kind of database it is. 
+# Then after that we try the bruteforcing of the password.
 
 
 for key in databaseFingerprintingDict:
